@@ -1,7 +1,8 @@
-interface Account {
+export interface Tag { text: string; }
+export interface Account {
   id: string;
-  tags: string;
-  type: string;
+  tags: Tag[];
+  type: 'LDAP' | 'Local';
   login: string;
-  password: string;
+  password: string | null;
 }

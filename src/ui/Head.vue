@@ -1,11 +1,18 @@
 <script setup lang="ts">
+import { useAccountsStore } from "@/stores/accounts";
 import Button from "primevue/button";
+const accountsStore = useAccountsStore();
 </script>
 
 <template>
   <div class="head">
     <h3>Учетные записи</h3>
-    <Button icon="pi pi-plus" rounded size="small" />
+    <Button
+      icon="pi pi-plus"
+      rounded
+      size="small"
+      @click="accountsStore.addAccount"
+    />
   </div>
 </template>
 

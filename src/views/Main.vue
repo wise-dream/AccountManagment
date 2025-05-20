@@ -1,6 +1,7 @@
 <script setup alng="ts">
 import Head from "@/ui/Head.vue";
 import Info from "@/ui/Info.vue";
+import Table from "@/ui/Table.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Info from "@/ui/Info.vue";
     <Info
       text="Для указания нескольких меток для одной пары логин-пароль используйте разделитель ';'"
     />
+    <Table />
   </main>
 </template>
 
